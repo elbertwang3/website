@@ -60,12 +60,12 @@ class Work extends Component {
         <Project projectName="The Senate special election in Alabama"
         projectCaption="A look into how Doug Jones turned the crimson tide in Alabama"
         imageSrc={images['alabama.png']}
-        projectLink="http://elbertwang3.github.io/alabama"
+        projectLink="http://elbertwang3.github.io/alabamasenateelection"
         forWhom="personal project"/>
         <Project projectName="Previewing Figure Skating at the Winter Olympics"
         projectCaption="A visual explainer of the gravity-defying jumps that define figure skating"
         imageSrc={images['figureskatingolympics.png']}
-        projectLink="http://elbertwang3.github.io/figureskating"
+        projectLink="http://elbertwang3.github.io/figureskatingolympics"
         forWhom="personal project"/>
         <Project projectName="How to spot a frontrunner on America's Next Top Model"
         projectCaption="What does it take to be on top?"
