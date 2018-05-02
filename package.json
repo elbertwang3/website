@@ -1,7 +1,8 @@
 {
-  "name": "website",
+  "name": "elbertwang3.github.io",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://elbertwang3.github.io/",
   "dependencies": {
     "canvas-renderer": "^2.0.1",
     "jquery": "^3.3.1",
