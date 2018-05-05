@@ -167,7 +167,6 @@ h1 {
   width:80%;
   margin-right: auto;
   margin-left: auto;
-  margin-top: 0;
   flex-flow: row wrap;
   justify-content: space-around;
   z-index: 1;

@@ -65,8 +65,8 @@ class Canvas extends Component {
       var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
       scene.add( line );
       document.addEventListener( 'mousemove', onDocumentMouseMove, false );
-      document.addEventListener( 'touchstart', onDocumentTouchStart, false );
-      document.addEventListener( 'touchmove', onDocumentTouchMove, false );
+      //document.addEventListener( 'touchstart', onDocumentTouchStart, false );
+      //document.addEventListener( 'touchmove', onDocumentTouchMove, false );
       //
       window.addEventListener( 'resize', onWindowResize, false );
       setTimeout(function(){ onWindowResize() }, 220);
@@ -89,7 +89,7 @@ class Canvas extends Component {
       mouseX = event.clientX - windowHalfX;
       mouseY = event.clientY - windowHalfY;
     }
-    function onDocumentTouchStart( event ) {
+    /*function onDocumentTouchStart( event ) {
       if ( event.touches.length > 1 ) {
         event.preventDefault();
         mouseX = event.touches[ 0 ].pageX - windowHalfX;
@@ -102,7 +102,7 @@ class Canvas extends Component {
         mouseX = event.touches[ 0 ].pageX - windowHalfX;
         mouseY = event.touches[ 0 ].pageY - windowHalfY;
       }
-    }
+    }*/
     //
     function animate() {
       requestAnimationFrame( animate );

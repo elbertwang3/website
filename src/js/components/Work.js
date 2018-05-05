@@ -42,10 +42,10 @@ class Work extends Component {
     console.log(alabama)
     return (
       <div className="projects-container">
-        <Project projectName="Serena the Great (WIP)"
+        <Project projectName="Serena the Great"
         projectCaption="Why Serena Williams is the greatest tennis player of all time"
         imageSrc={images['serena.gif']}
-        projectLink=""
+        projectLink="http://elbertwang3.github.io/serena"
         forWhom="Dremio"/>
         <Project projectName="The Winter Olympics"
         projectCaption="Visualizing all of the medalists from the Winter Games"
