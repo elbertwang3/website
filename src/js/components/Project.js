@@ -17,9 +17,12 @@ class Project extends Component {
   }
   render() {
     
-    const {projectName, projectCaption, imageSrc, projectLink, forWhom} = this.props
+    const {projectName, projectCaption, imageSrc, projectLink, forWhom, show} = this.props
+    let visibility = show ? "visible" : "hidden"
+    console.log(visibility)
+    const style = {visibility: visibility}
     return (
-      <div className="project-container">
+      <div className="project-container" style={style}>
         <a href={projectLink}>
           <div className="project">
             <div className="img-container">

@@ -3,6 +3,7 @@ import '../../css/App.css';
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
 import Project from './Project.js'
 import $ from 'jquery';
+import * as d3 from 'd3';
 
 
 class Work extends Component {
@@ -13,6 +14,7 @@ class Work extends Component {
 
     this.state = {
       images: null,
+      projects: null,
     }
   }
 
@@ -28,21 +30,31 @@ class Work extends Component {
   }
 
   componentDidMount() {
+    const that = this
     var body = document.body,
     html = document.documentElement;
 
-    var totalHeight = html.offsetHeight;
-    console.log(totalHeight)
 
+    d3.csv("data/projects.csv").then(function(data) {
+      that.setState({projects: data})
+    })
+  
   }
   render() {
-    const {images} = this.state
-    console.log(images)
-    const alabama = images['alabama.png']
-    console.log(alabama)
+    const {images, projects} = this.state
+    const that = this
+    let projectsDivs
+    if (images && projects) {
+     
+      projectsDivs = projects.map(d => <Project projectName={d['projectName']} projectCaption={d['projectCaption']} imageSrc={images[`${d['imagesrc']}`]} projectLink={d['projectlink']} forWhom={d['forwhom']} show={d['projectName'] != ""} />) 
+
+    }
+    
+    
+    
     return (
       <div className="projects-container">
-        <Project projectName="Serena the Great"
+        {/*<Project projectName="Serena the Great"
         projectCaption="Why Serena Williams is the greatest tennis player of all time"
         imageSrc={images['serena.gif']}
         projectLink="http://elbertwang3.github.io/serena"
@@ -71,7 +83,8 @@ class Work extends Component {
         projectCaption="What does it take to be on top?"
         imageSrc={images['antm.gif']}
         projectLink="http://elbertwang3.github.io/antm"
-        forWhom="personal project"/>
+        forWhom="personal project"/>*/}
+        {projectsDivs}
       </div>
     );
   }
