@@ -42,6 +42,7 @@ class Work extends Component {
   }
   render() {
     const {images, projects} = this.state
+    console.log(images)
     const that = this
     let projectsDivs
     if (images && projects) {

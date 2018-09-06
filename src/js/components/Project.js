@@ -21,12 +21,22 @@ class Project extends Component {
     let visibility = show ? "visible" : "hidden"
     console.log(visibility)
     const style = {visibility: visibility}
+    const jsonPattern = new RegExp(".mp4$")
+    let img
+    if (jsonPattern.test(imageSrc)) {
+      img = <video preload="true" autoplay="autoplay" loop="loop">
+        <source src={imageSrc} type="video/mp4"></source>
+      </video>
+    } else {
+      img = <img src={imageSrc}></img>
+    }
+
     return (
       <div className="project-container" style={style}>
         <a href={projectLink}>
           <div className="project">
             <div className="img-container">
-              <img src={imageSrc}></img>
+              {img}
             </div>
             <div className="description">
               <div className="project-name">
