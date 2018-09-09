@@ -41,7 +41,7 @@ class Canvas extends Component {
       // particles
       var PI2 = Math.PI * 2;
       var material = new THREE.SpriteCanvasMaterial( {
-        color: 0xffffff,
+        color: 0x808080,
         program: function ( context ) {
           context.beginPath();
           context.arc( 0, 0, 0.5, 0, PI2, true );
@@ -62,7 +62,7 @@ class Canvas extends Component {
       }
       // lines
       var geometry = new THREE.BufferGeometry().setFromPoints( points );
-      var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0xffffff, opacity: 0.5 } ) );
+      var line = new THREE.Line( geometry, new THREE.LineBasicMaterial( { color: 0x808080, opacity: 0.5 } ) );
       scene.add( line );
       document.addEventListener( 'mousemove', onDocumentMouseMove, false );
       //document.addEventListener( 'touchstart', onDocumentTouchStart, false );
@@ -83,6 +83,7 @@ class Canvas extends Component {
       camera.aspect = window.innerWidth / totalHeight;
       camera.updateProjectionMatrix();
       renderer.setSize( window.innerWidth, totalHeight );
+      renderer.setClearColorHex( 0xffffff, 1 );
     }
     //
     function onDocumentMouseMove(event) {

@@ -47,7 +47,7 @@ class Work extends Component {
     let projectsDivs
     if (images && projects) {
      
-      projectsDivs = projects.map(d => <Project projectName={d['projectName']} projectCaption={d['projectCaption']} imageSrc={images[`${d['imagesrc']}`]} projectLink={d['projectlink']} forWhom={d['forwhom']} show={d['projectName'] != ""} />) 
+      projectsDivs = projects.map(d => <Project key={d['projectName']} projectName={d['projectName']} projectCaption={d['projectCaption']} imageSrc={images[`${d['imagesrc']}`]} projectLink={d['projectlink']} forWhom={d['forwhom']} />) 
 
     }
     
