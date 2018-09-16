@@ -2,12 +2,14 @@ projectName,projectCaption,imagesrc,projectlink,forwhom
 The Bee,Previewing the contestants at the 2018 Scripps Spelling Bee,bee.mp4,https://www.dremio.com/bee/,Dremio
 Serena the Great,Why Serena Williams is the greatest tennis player of all time,serenaline.mp4,https://www.dremio.com/serena/,Dremio
 The Winter Olympics,Visualizing all of the medalists from the Winter Games,winterolympics.png,http://dremio.com/the-winter-olympics,Dremio
+Trump's Twitter Habit,A sentiment analysis of the greatest tweets from the tweeter-in-chief,trumptwitter.png,https://www.dremio.com/trump-twitter-sentiment-analysis/,Dremio
 The Himalayas,Exploring the world's tallest mountain range,himalayas.mp4,http://elbertwang3.github.io/himalayas,personal project
 The Senate special election in Alabama,A look into how Doug Jones turned the crimson tide in Alabama,alabama.png,http://elbertwang3.github.io/alabamasenateelection,personal project
 Previewing Figure Skating at the Winter Olympics,A visual explainer of the gravity-defying jumps that define figure skating,figureskatingolympics.png,http://elbertwang3.github.io/figureskatingolympics,personal project
 How to spot a frontrunner on America's Next Top Model,What does it take to be on top?,antm.mp4,http://elbertwang3.github.io/antm,personal project
-San Francisco's 2018 Mayoral Election,Explaining how ranked-choice voting worked in the mayoral election,rcv.png,http://elbertwang3.github.io/sfmayor-rcv-2018,SF Chronicle
+San Francisco's 2018 Mayoral Election,Explaining how ranked-choice voting worked in San Francisco's mayoral election,rcv.png,http://elbertwang3.github.io/sfmayor-rcv-2018,SF Chronicle
 Pride Timeline,a history of gay rights in San Francisco,pride.png,https://projects.sfchronicle.com/2018/sf-pride-timeline/,SF Chronicle
 SF Homeless Project: Division Street,Tracking the lives of seven homeless people on Division Street in San Francisco,division.mp4,https://projects.sfchronicle.com/sf-homeless/division-street-2018-update/,SF Chronicle
-Food Insecurity in the Bay Area,Tackling the where and why of the hidden hunger epidemic in the Bay Area,foodinsecurity.mp4,,SF Chronicle
-BART Crimes,An interactive dashboard of where and when crimes occur at BART stations and on trains,bartcrimes.mp4,,SF Chronicle
+Food Insecurity in the Bay Area,Tackling the where and why of the hidden hunger epidemic in the Bay Area,snap.png,,SF Chronicle
+BART Crimes,An interactive dashboard of where and when crimes occur at BART stations and on BART trains,bartcrimes.mp4,,SF Chronicle
+Cult winery map,Mapping the remains of a northern California cult that happened to also be a winery,cultwine.png,https://projects.sfchronicle.com/2018/embeds/cult-wine/map/,SF Chronicle

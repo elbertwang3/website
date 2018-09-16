@@ -35,19 +35,10 @@
 }
 
 @font-face {
-    font-family: 'CaslonExtraCondensedBold';
-    src: url("../fonts/OPTICaslon-ExtraCondensed.otf") format("opentype");
-}
-@font-face {
     font-family: 'CaslonExtraCondensed';
     src: url("../fonts/Caslon RR Bold ExtraCond.otf") format("opentype");
 }
 
-
-@font-face {
-    font-family: 'CaslonCondensed';
-    src: url("../fonts/OPTICaslonBold-Cond.otf") format("opentype");
-}
 
 @font-face {
     font-family: 'GT-Sectra';
