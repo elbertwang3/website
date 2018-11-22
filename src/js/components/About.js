@@ -15,14 +15,13 @@ class About extends Component {
 
        	<p>I am currently a fellow on the data visuals team 
         at <a href="https://www.texastribune.org/" target="_blank">The Texas Tribune</a>, a nonprofit media
-        organization covering Texas politics. Previously, I was a data journalist
+        organization covering Texas politics and policy. Previously, I was a data journalist
         at <a href="https://www.dremio.com/" target="_blank">Dremio</a>, a data-as a service-company in Mountain View, where I used the company's technology
         to analyze datasets and write visual stories. This summer, I was an intern at 
         the <a href="https://www.sfchronicle.com/" target="_blank">San Francisco Chronicle</a>, 
         where I built charts and tools on the interactives team.</p>
 
-        <p>I am currently looking for full-time opportunities for 2019.
-       Feel free to contact me through <a href="mailto:elbertwang1@gmail.com">e-mail</a> or on <a href="https://twitter.com/elbertwang1" target="_blank">Twitter</a>, or 
+        <p>Feel free to contact me through <a href="mailto:elbertwang1@gmail.com">e-mail</a> or on <a href="https://twitter.com/elbertwang1" target="_blank">Twitter</a>, or 
        check out my <a href="/work">work</a>.</p>
        </div>
     );
