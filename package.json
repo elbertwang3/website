@@ -5,7 +5,9 @@
   "homepage": "https://elbertwang3.github.io/",
   "dependencies": {
     "canvas-renderer": "^2.0.1",
+    "chalk": "^2.4.1",
     "d3": "^5.4.0",
+    "fs-extra": "^7.0.1",
     "jquery": "^3.3.1",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
@@ -19,6 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && cp build/index.html build/200.html",
+    "data:fetch": "node ./js/scripts/get-data.js",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
