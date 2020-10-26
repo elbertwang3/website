@@ -36,6 +36,13 @@
       "forwhom": "The Wall Street Journal"
     },
     {
+      "projectName": "A Visual Guide to Google's Ad Business",
+      "projectCaption": "How Google edged out rivals and built the world's dominant ad machine",
+      "imagesrc": "ads.png",
+      "projectlink": "https://www.wsj.com/articles/how-google-edged-out-rivals-and-built-the-worlds-dominant-ad-machine-a-visual-guide-11573142071",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
       "projectName": "Tracking Shootings in America",
       "projectCaption": "Visualizing the toll of mass shootings with FBI data",
       "imagesrc": "shootings.png",
