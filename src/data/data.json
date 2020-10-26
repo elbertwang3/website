@@ -1,0 +1,207 @@
+{
+  "data": [
+    {
+      "projectName": "What Happens if SAT Scores Consider Adversity?",
+      "projectCaption": "See how adversity and SAT scores intersect at your high school",
+      "imagesrc": "adversity.png",
+      "projectlink": "https://www.wsj.com/articles/what-happens-if-sat-scores-consider-adversity-11574773201",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
+      "projectName": "The Nest Egg Game",
+      "projectCaption": "Your life in 10 financial milestones",
+      "imagesrc": "egg.png",
+      "projectlink": "https://www.wsj.com/graphics/nest-egg-game/",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
+      "projectName": "Coronavirus Mutations Map the Global Outbreak",
+      "projectCaption": "Using genome data to trace the spread of the virus",
+      "imagesrc": "mutations.png",
+      "projectlink": "https://www.wsj.com/graphics/coronavirus-mutations-map-the-global-outbreak/",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
+      "projectName": "Tested Positive for Antibodies?",
+      "projectCaption": "A Bayesian calculator explaining how your results may be inaccurate",
+      "imagesrc": "antibodies.png",
+      "projectlink": "https://www.wsj.com/articles/tested-positive-for-coronavirus-antibodies-dont-let-your-guard-down-11591794007",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
+      "projectName": "The Web of the College Admissions Scandal",
+      "projectCaption": "Mapping the connections between parents and associates in the Varsity Blues scandal",
+      "imagesrc": "web.png",
+      "projectlink": "https://www.wsj.com/articles/former-pimco-ceo-to-be-sentenced-in-college-admissions-scandal-11581089874",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
+      "projectName": "Tracking Shootings in America",
+      "projectCaption": "Visualizing the toll of mass shootings with FBI data",
+      "imagesrc": "shootings.png",
+      "projectlink": "https://www.wsj.com/graphics/fbi-active-shooter/",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
+      "projectName": "The Periodic Table",
+      "projectCaption": "A brief visual history of the periodic table",
+      "imagesrc": "periodic.png",
+      "projectlink": "https://vis.sciencemag.org/periodic-table/",
+      "forwhom": "Science Magazine"
+    },
+    {
+      "projectName": "Serena the Great",
+      "projectCaption": "Why Serena Williams is the greatest tennis player of all time",
+      "imagesrc": "serenaline.mp4",
+      "projectlink": "https://www.dremio.com/serena/",
+      "forwhom": "Dremio"
+    },
+    {
+      "projectName": "The Winter Olympics",
+      "projectCaption": "Visualizing all of the medalists from the Winter Games",
+      "imagesrc": "winterolympics.png",
+      "projectlink": "http://dremio.com/the-winter-olympics",
+      "forwhom": "Dremio"
+    },
+    {
+      "projectName": "The Bee",
+      "projectCaption": "Previewing the contestants at the 2018 Scripps Spelling Bee",
+      "imagesrc": "bee.mp4",
+      "projectlink": "https://www.dremio.com/bee/",
+      "forwhom": "Dremio"
+    },
+    {
+      "projectName": "The Himalayas",
+      "projectCaption": "Exploring the world's tallest mountain range",
+      "imagesrc": "himalayas.mp4",
+      "projectlink": "http://elbertwang3.github.io/himalayas",
+      "forwhom": "personal project"
+    },
+    {
+      "projectName": "Early voting tracker",
+      "projectCaption": "Tracking how many Texans have already cast their ballots in the 2018 midterm election",
+      "imagesrc": "earlyvoting.png",
+      "projectlink": "https://apps.texastribune.org/features/2018/general-election-early-voting/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Texas shelters",
+      "projectCaption": "Where are the unaccompanied migrant children held in Texas?",
+      "imagesrc": "shelters.png",
+      "projectlink": "https://apps.texastribune.org/features/2018/texas-migrant-children-shelters/#shelters-chart",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Poverty in Texas",
+      "projectCaption": "How poverty disproportionately affects children and minorities in Texas",
+      "imagesrc": "poverty.png",
+      "projectlink": "https://www.texastribune.org/2018/09/13/texas-poverty-census-2017-lowest-levels-decade/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Comparing midterm turnout in 2018",
+      "projectCaption": "How did voter turnout in Texas stack up against other states?",
+      "imagesrc": "stateturnout.png",
+      "projectlink": "https://www.texastribune.org/2018/12/07/texas-voter-turnout-sixth-highest-increase-2018-midterms/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Dis-Integration: Longview",
+      "projectCaption": "Schools in Longview ISD still segregated after a desegregation court order was lifted",
+      "imagesrc": "longview.png",
+      "projectlink": "https://www.texastribune.org/2018/11/29/texas-longview-school-segregation-disintegration/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Historic election turnout",
+      "projectCaption": "Explore historic turnout for  the Texas midterm election for your county",
+      "imagesrc": "turnout.png",
+      "projectlink": "https://www.texastribune.org/2018/11/07/texas-election-results-turnout-county-look-up/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Minimum wage",
+      "projectCaption": "The federal minimum wage is hardly a living in Texas",
+      "imagesrc": "minwage.png",
+      "projectlink": "https://www.texastribune.org/2018/12/20/most-states-raise-their-minimum-wages-texas-refuses-budge/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "Texas Public Schools Explorer",
+      "projectCaption": "Mapbox locator maps for districts, campuses, and regions for a Texas public schools database",
+      "imagesrc": "scuole.png",
+      "projectlink": "https://schools.texastribune.org/",
+      "forwhom": "The Texas Tribune"
+    },
+    {
+      "projectName": "The Senate special election in Alabama",
+      "projectCaption": "A look into how Doug Jones turned the crimson tide in Alabama",
+      "imagesrc": "alabama.png",
+      "projectlink": "http://elbertwang3.github.io/alabamasenateelection",
+      "forwhom": "personal project"
+    },
+    {
+      "projectName": "Previewing Figure Skating at the Winter Olympics",
+      "projectCaption": "A visual explainer of the gravity-defying jumps that define figure skating",
+      "imagesrc": "figureskatingolympics.png",
+      "projectlink": "http://elbertwang3.github.io/figureskatingolympics",
+      "forwhom": "personal project"
+    },
+    {
+      "projectName": "How to spot a frontrunner on America's Next Top Model",
+      "projectCaption": "What does it take to be on top?",
+      "imagesrc": "antm.mp4",
+      "projectlink": "http://elbertwang3.github.io/antm",
+      "forwhom": "personal project"
+    },
+    {
+      "projectName": "San Francisco's 2018 Mayoral Election",
+      "projectCaption": "Explaining how ranked-choice voting worked in San Francisco's mayoral election",
+      "imagesrc": "rcv.png",
+      "projectlink": "http://elbertwang3.github.io/sfmayor-rcv-2018",
+      "forwhom": "personal project"
+    },
+    {
+      "projectName": "Food Insecurity in the Bay Area",
+      "projectCaption": "Tackling the where and why of the hidden hunger epidemic in the Bay Area",
+      "imagesrc": "snap.png",
+      "projectlink": "https://projects.sfchronicle.com/2018/embeds/food-insecurity/",
+      "forwhom": "SF Chronicle"
+    },
+    {
+      "projectName": "BART Crimes",
+      "projectCaption": "An interactive dashboard of where and when crimes occur at BART stations and on BART trains",
+      "imagesrc": "bartcrimes.mp4",
+      "projectlink": "",
+      "forwhom": "SF Chronicle"
+    },
+    {
+      "projectName": "Cult winery map",
+      "projectCaption": "Mapping the remains of a northern California cult that happened to also be a winery",
+      "imagesrc": "cultwine.png",
+      "projectlink": "https://projects.sfchronicle.com/2018/embeds/cult-wine/map/",
+      "forwhom": "SF Chronicle"
+    },
+    {
+      "projectName": "Trump's Twitter Habit",
+      "projectCaption": "A sentiment analysis of the greatest tweets from the tweeter-in-chief",
+      "imagesrc": "trumptwitter.png",
+      "projectlink": "https://www.dremio.com/trump-twitter-sentiment-analysis/",
+      "forwhom": "Dremio"
+    },
+    {
+      "projectName": "Pride Timeline",
+      "projectCaption": "a history of gay rights in San Francisco",
+      "imagesrc": "pride.png",
+      "projectlink": "https://projects.sfchronicle.com/2018/sf-pride-timeline/",
+      "forwhom": "SF Chronicle"
+    },
+    {
+      "projectName": "SF Homeless Project: Division Street",
+      "projectCaption": "Tracking the lives of seven homeless people on Division Street in San Francisco",
+      "imagesrc": "division.mp4",
+      "projectlink": "https://projects.sfchronicle.com/sf-homeless/division-street-2018-update/",
+      "forwhom": "SF Chronicle"
+    }
+  ]
+}

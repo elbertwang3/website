@@ -1,58 +1,58 @@
-import React, { Component } from 'react';
-import '../../css/App.css';
+import React, { Component } from "react";
+import "../../css/App.css";
 import { BrowserRouter as Router, Route, Link } from "react-router-dom";
-import Project from './Project.js'
-import $ from 'jquery';
-import * as d3 from 'd3';
-
+import Project from "./Project.js";
+import { data } from "../../data/data.json";
 
 class Work extends Component {
-
-  constructor(props){
-
+  constructor(props) {
     super(props);
 
     this.state = {
       images: null,
-      projects: null,
-    }
+    };
   }
 
   componentWillMount() {
-    const images = this.importImages(require.context('../../images/', false, /\.(png|jpg|gif|mp4)$/));
-  	this.setState({images: images})
+    const images = this.importImages(
+      require.context("../../images/", false, /\.(png|jpg|gif|mp4)$/)
+    );
+    this.setState({ images: images });
   }
   importImages(r) {
-
     let images = {};
-    r.keys().map((item, index) => { images[item.replace('./', '')] = r(item); });
+    r.keys().map((item, index) => {
+      images[item.replace("./", "")] = r(item);
+    });
     return images;
   }
 
   componentDidMount() {
-    const that = this
+    const that = this;
     var body = document.body,
-    html = document.documentElement;
+      html = document.documentElement;
 
-
-    d3.csv("data/projects.csv").then(function(data) {
-      that.setState({projects: data})
-    })
-  
+    // d3.csv("data/projects.csv").then(function(data) {
+    //   that.setState({projects: data})
+    // })
   }
   render() {
-    const {images, projects} = this.state
-    console.log(images)
-    const that = this
-    let projectsDivs
-    if (images && projects) {
-     
-      projectsDivs = projects.map(d => <Project key={d['projectName']} projectName={d['projectName']} projectCaption={d['projectCaption']} imageSrc={images[`${d['imagesrc']}`]} projectLink={d['projectlink']} forWhom={d['forwhom']} />) 
-
+    const { images } = this.state;
+    const that = this;
+    let projectsDivs;
+    if (images && data) {
+      projectsDivs = data.map((d) => (
+        <Project
+          key={d["projectName"]}
+          projectName={d["projectName"]}
+          projectCaption={d["projectCaption"]}
+          imageSrc={images[`${d["imagesrc"]}`]}
+          projectLink={d["projectlink"]}
+          forWhom={d["forwhom"]}
+        />
+      ));
     }
-    
-    
-    
+
     return (
       <div className="projects-container">
         {/*<Project projectName="Serena the Great"

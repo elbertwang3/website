@@ -1,53 +1,58 @@
-'use strict';
+// native
+const path = require("path");
 
-const chalk = require('chalk');
-const fs = require('fs-extra');
-const path = require('path');
+// packages
+const colors = require("ansi-colors");
+const fs = require("fs-extra");
 
-const config = require('../../project.config');
-const fetch = require('./fetch');
-const htmlToArchieML = require('./html-to-archieml');
-const paths = require('../../config/paths');
-const sheetByRange = require('./sheet-by-range');
-const xlsxToCopyText = require('./xlsx-to-copytext');
+// internal
+const { google } = require("googleapis");
+const { docToArchieML } = require("@newswire/doc-to-archieml");
+const { sheetToData } = require("@newswire/sheet-to-data");
+const config = require("../../../project.config");
 
-fetch(config.files, (err, data, file) => {
-  if (err) throw err;
+async function getData() {
+  const auth = await google.auth.getClient({
+    scopes: [
+      "https://www.googleapis.com/auth/documents.readonly",
+      "https://www.googleapis.com/auth/spreadsheets.readonly",
+    ],
+  });
+  const { dataMutators, files } = config;
+  for (const file of files) {
+    const filepath = path.join("src/data", `${file.name}.json`);
+    const mutator =
+      dataMutators && dataMutators[file.name]
+        ? dataMutators[file.name]
+        : (d) => d;
 
-  fs.ensureDirSync(paths.appData);
-  const filePath = path.join(paths.appData, `${file.name}.json`);
+    let data;
+    let color;
 
-  const mutator =
-    config.dataMutators && config.dataMutators[file.name]
-      ? config.dataMutators[file.name]
-      : d => d;
+    switch (file.type) {
+      case "doc":
+        data = await docToArchieML({ documentId: file.fileId, auth });
+        color = "magenta";
+        break;
+      case "sheet":
+        data = await sheetToData({ auth, spreadsheetId: file.fileId });
+        color = "cyan";
+        break;
+      default:
+        throw new Error(
+          `No data fetching method found for type "${file.type}"`
+        );
+    }
 
-  if (file.type === 'doc') {
-    htmlToArchieML(data, (err, d) => {
-      if (err) throw err;
-      fs.writeFileSync(filePath, JSON.stringify(mutator(d), null, 2));
-      logDownload(file.name, file.fileId, 'magenta');
-    });
+    data = mutator(data);
+    await fs.outputJson(filepath, data, { spaces: 2 });
+
+    logDownload(file.name, file.fileId, color);
   }
-
-  if (file.type === 'sheet') {
-    xlsxToCopyText(data, file.copytext, (err, d) => {
-      if (err) throw err;
-      fs.writeFileSync(filePath, JSON.stringify(mutator(d), null, 2));
-      logDownload(file.name, file.fileId, 'cyan');
-    });
-  }
-
-  if (file.type === 'gsheet') {
-    sheetByRange(file.fileId, file.range, {
-      majorDimension: file.majorDimension,
-    }).then(d => {
-      fs.writeFileSync(filePath, JSON.stringify(mutator(d), null, 2));
-      logDownload(file.name, file.fileId, 'yellow');
-    });
-  }
-});
+}
 
 function logDownload(fileName, fileId, color) {
-  console.log(chalk[color](`Downloaded \`${fileName}\` (${fileId})`));
+  console.log(colors[color](`Downloaded \`${fileName}\` (${fileId})`));
 }
+
+getData().catch(console.error);
