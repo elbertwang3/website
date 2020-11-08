@@ -22,6 +22,13 @@
       "forwhom": "The Wall Street Journal"
     },
     {
+      "projectName": "How Joe Biden Won",
+      "projectCaption": "Election data shows how key demographics in counties shifted in the 2020 election",
+      "imagesrc": "election.png",
+      "projectlink": "https://www.wsj.com/articles/how-joe-biden-won-the-election-votes-from-blue-america-with-few-gains-in-trump-world-11604862528",
+      "forwhom": "The Wall Street Journal"
+    },
+    {
       "projectName": "Tested Positive for Antibodies?",
       "projectCaption": "A Bayesian calculator explaining how your results may be inaccurate",
       "imagesrc": "antibodies.png",
