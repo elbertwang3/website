@@ -148,13 +148,6 @@
       "forwhom": "The Texas Tribune"
     },
     {
-      "projectName": "Texas Public Schools Explorer",
-      "projectCaption": "Mapbox locator maps for districts, campuses, and regions for a Texas public schools database",
-      "imagesrc": "scuole.png",
-      "projectlink": "https://schools.texastribune.org/",
-      "forwhom": "The Texas Tribune"
-    },
-    {
       "projectName": "The Senate special election in Alabama",
       "projectCaption": "A look into how Doug Jones turned the crimson tide in Alabama",
       "imagesrc": "alabama.png",
@@ -183,25 +176,11 @@
       "forwhom": "personal project"
     },
     {
-      "projectName": "Food Insecurity in the Bay Area",
-      "projectCaption": "Tackling the where and why of the hidden hunger epidemic in the Bay Area",
-      "imagesrc": "snap.png",
-      "projectlink": "https://projects.sfchronicle.com/2018/embeds/food-insecurity/",
-      "forwhom": "SF Chronicle"
-    },
-    {
-      "projectName": "BART Crimes",
-      "projectCaption": "An interactive dashboard of where and when crimes occur at BART stations and on BART trains",
-      "imagesrc": "bartcrimes.mp4",
-      "projectlink": "",
-      "forwhom": "SF Chronicle"
-    },
-    {
-      "projectName": "Cult winery map",
-      "projectCaption": "Mapping the remains of a northern California cult that happened to also be a winery",
-      "imagesrc": "cultwine.png",
-      "projectlink": "https://projects.sfchronicle.com/2018/embeds/cult-wine/map/",
-      "forwhom": "SF Chronicle"
+      "projectName": "Texas Public Schools Explorer",
+      "projectCaption": "Mapbox locator maps for districts, campuses, and regions for a Texas public schools database",
+      "imagesrc": "scuole.png",
+      "projectlink": "https://schools.texastribune.org/",
+      "forwhom": "The Texas Tribune"
     },
     {
       "projectName": "Trump's Twitter Habit",
@@ -209,13 +188,6 @@
       "imagesrc": "trumptwitter.png",
       "projectlink": "https://www.dremio.com/trump-twitter-sentiment-analysis/",
       "forwhom": "Dremio"
-    },
-    {
-      "projectName": "Pride Timeline",
-      "projectCaption": "a history of gay rights in San Francisco",
-      "imagesrc": "pride.png",
-      "projectlink": "https://projects.sfchronicle.com/2018/sf-pride-timeline/",
-      "forwhom": "SF Chronicle"
     },
     {
       "projectName": "SF Homeless Project: Division Street",
