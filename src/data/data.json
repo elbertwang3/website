@@ -50,6 +50,13 @@
       "forwhom": "The Wall Street Journal"
     },
     {
+      "projectName": "SDG Atlas",
+      "projectCaption": "I worked on chapters 1, 6, 15, and 16",
+      "imagesrc": "sdg.png",
+      "projectlink": "https://datatopics.worldbank.org/sdgatlas/",
+      "forwhom": "The World Bank"
+    },
+    {
       "projectName": "Tracking Shootings in America",
       "projectCaption": "Visualizing the toll of mass shootings with FBI data",
       "imagesrc": "shootings.png",
